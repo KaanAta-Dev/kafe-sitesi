@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limon Kafe | Akdeniz Lezzetleri</title>
+    <meta
+      name="description"
+      content="Limon Kafe, Akdeniz esintili kahvaltıları, ev yapımı yemekleri ve taze limonatasıyla sizi güneşli bir sofraya davet ediyor. Menümüzü inceleyin, masanızı ayırtın."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍋</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo">Limon Kafe</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#menu">Menü</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#rezervasyon">Rezervasyon</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </nav>
+        <a href="#rezervasyon" class="btn btn-small">Rezervasyon Yap</a>
+        <button class="menu-toggle" aria-label="Menüyü aç/kapat">☰</button>
+      </div>
+    </header>
+    <main>
+      <section id="giris" class="hero">
+        <h1>Limon Kafe</h1>
+        <p class="hero-slogan">Akdeniz'in güneşi, sofranızda.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn">Menüyü İncele</a>
+          <a href="#rezervasyon" class="btn btn-outline">Rezervasyon Yap</a>
+        </div>
+      </section>
+      <section id="hakkimizda">
+        <div class="container">
+          <h2>Hakkımızda</h2>
+          <div class="about-content">
+            <img
+              src="images/hakkimizda.webp"
+              alt="Limon ağaçları ve ahşap masalarla çevrili kafe bahçesi"
+              width="800"
+              height="1086"
+            />
+            <div class="about-text">
+              <p>
+                Limon Kafe, Akdeniz'in sıcaklığını ve sofra kültürünü bir araya
+                getiren küçük bir mahalle kafesi. Sabahları taze demlenmiş çay
+                ve serpme kahvaltıyla, öğlenleri ev yemekleriyle, akşamları ise
+                bir bardak limonata eşliğinde sohbetlerle sizi ağırlıyoruz.
+              </p>
+              <p>
+                Mutfağımızda her gün yerel üreticilerden aldığımız mevsim
+                ürünlerini kullanıyoruz. Zeytinyağlılarımızdan imza tatlımız
+                limonlu cheesecake'e kadar her şey, aynı gün kendi mutfağımızda
+                hazırlanıyor.
+              </p>
+              <p>
+                Limon ağaçlarının gölgesindeki bahçemizde acele etmenize gerek
+                yok. Arkadaşlarınızla uzun bir kahvaltı, aileyle bir öğle yemeği
+                ya da tek başına bir kahve molası için kapımız her zaman açık.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu">
+        <div class="container">
+          <h2>Menümüz</h2>
+          <div class="menu-tabs">
+            <button class="tab-btn active" data-category="kahvalti">
+              Kahvaltı
+            </button>
+            <button class="tab-btn" data-category="ana-yemek">Ana Yemek</button>
+            <button class="tab-btn" data-category="tatli">Tatlı</button>
+            <button class="tab-btn" data-category="sicak-icecek">
+              Sıcak İçecek
+            </button>
+            <button class="tab-btn" data-category="soguk-icecek">
+              Soğuk İçecek
+            </button>
+          </div>
+          <div class="menu-panel active" id="kahvalti">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div>
+                  <h3>Serpme Kahvaltı (2 kişilik)</h3>
+                  <p>
+                    Peynir çeşitleri, zeytin, bal-kaymak, reçeller, sıcaklar,
+                    sınırsız çay
+                  </p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Limon Tabağı</h3>
+                  <p>
+                    Kafenin kahvaltı tabağı: beyaz peynir, domates, salatalık,
+                    zeytin, haşlanmış yumurta
+                  </p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Menemen</h3>
+                  <p>Domates, biber, köy yumurtası</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Sucuklu Yumurta</h3>
+                  <p>Sahanda, kasap sucuğu ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Avokadolu Tost</h3>
+                  <p>Ekşi maya ekmek, avokado, poşe yumurta</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Pancake</h3>
+                  <p>Mevsim meyveleri ve akçaağaç şurubu ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Simit Tabağı</h3>
+                  <p>Çıtır simit, krem peynir, domates, zeytin</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="ana-yemek">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div>
+                  <h3>Zeytinyağlı Tabağı</h3>
+                  <p>Günün zeytinyağlıları ve bulgur pilavı</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Mantı</h3>
+                  <p>El açması, yoğurt ve tereyağlı sos</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Izgara Köfte</h3>
+                  <p>Közlenmiş sebze ve pilav ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Tavuk Şiş</h3>
+                  <p>Yoğurtlu marine, közlenmiş biber ve lavaş</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Fırın Makarna</h3>
+                  <p>Beşamel soslu, kaşar gratinli</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Akdeniz Salatası</h3>
+                  <p>Hellim, roka, cherry domates, nar ekşisi</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Mercimek Çorbası</h3>
+                  <p>Limon ve kızarmış ekmek ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="tatli">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div>
+                  <h3>Limonlu Cheesecake</h3>
+                  <p>Evin imza tatlısı</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Fırın Sütlaç</h3>
+                  <p>Tarçın ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Mevsim Meyveli Tart</h3>
+                  <p>Günlük hazırlanır</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Brownie</h3>
+                  <p>Sıcak servis, vanilyalı dondurma ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Kabak Tatlısı</h3>
+                  <p>Tahin ve ceviz ile, mevsiminde</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="sicak-icecek">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div>
+                  <h3>Demleme Çay</h3>
+                  <p>İnce belli bardakta</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Türk Kahvesi</h3>
+                  <p>Lokum eşliğinde</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Filtre Kahve</h3>
+                  <p>Günün çekirdeği</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Latte</h3>
+                  <p>Espresso ve buharla ısıtılmış süt</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Sahlep</h3>
+                  <p>Tarçın ile, kış aylarında</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Bitki Çayı</h3>
+                  <p>Ihlamur, adaçayı veya kuşburnu</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="soguk-icecek">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div>
+                  <h3>Ev Yapımı Limonata</h3>
+                  <p>Taze nane ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Çilekli Limonata</h3>
+                  <p>Taze çilek püresi ile</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Ice Latte</h3>
+                  <p>Buzlu espresso ve süt</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Taze Portakal Suyu</h3>
+                  <p>Günlük sıkılır</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+              <li class="menu-item">
+                <div>
+                  <h3>Ayran</h3>
+                  <p>Köpüklü, bakır tasta</p>
+                </div>
+                <span class="price">###</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="galeri">
+        <div class="container">
+          <h2>Galeri</h2>
+          <div class="gallery">
+            <img
+              src="images/galeri-1.webp"
+              alt="Taze nane ve limon dilimleriyle ev yapımı limonata"
+              width="800"
+              height="1200"
+            />
+            <img
+              src="images/galeri-2.webp"
+              alt="Bakır tavada servis edilen menemen ve ekmek"
+              width="800"
+              height="533"
+            />
+            <img
+              src="images/galeri-3.webp"
+              alt="Limon kabuğu rendesiyle süslenmiş limonlu cheesecake"
+              width="800"
+              height="1200"
+            />
+            <img
+              src="images/galeri-4.webp"
+              alt="Ahşap tezgâhı ve bitkileriyle kafenin aydınlık iç mekânı"
+              width="800"
+              height="533"
+            />
+            <img
+              src="images/galeri-5.webp"
+              alt="Lokum eşliğinde porselen fincanda Türk kahvesi"
+              width="800"
+              height="800"
+            />
+            <img
+              src="images/galeri-6.webp"
+              alt="Limon dilimiyle servis edilen zeytinyağlı yaprak sarma ve taze fasulye"
+              width="800"
+              height="533"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="rezervasyon">
+        <div class="container">
+          <h2>Rezervasyon</h2>
+          <p>
+            Masanızı önceden ayırtın, gününüzü sizin için hazırlayalım.
+            Rezervasyonunuzu onaylamak için sizi telefonla arayacağız. 12
+            kişiden kalabalık gruplar için lütfen bizi doğrudan arayın.
+          </p>
+          <form action="" class="reservation-form">
+            <div class="form-group">
+              <label for="nameSurname">Ad Soyad</label>
+              <input type="text" id="nameSurname" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="date">Tarih</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="clock">Saat</label>
+              <input type="time" id="clock" required />
+            </div>
+            <div class="form-group">
+              <label for="numberOfPeople">Kişi Sayısı</label>
+              <input
+                type="number"
+                min="1"
+                max="12"
+                id="numberOfPeople"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="note">Not</label>
+              <textarea id="note"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn">Rezervasyon Yap</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="iletisim">
+        <div class="container">
+          <h2>Bize Ulaşın</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25571.965779753067!2d34.55202524800847!3d36.7586735961076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x15278b39edaa851f%3A0x38dc3bf7495371b5!2sMersin%20Sahili%2C%20E%C4%9Fri%C3%A7am%2C%20Adnan%20Menderes%20Blv.%20No%3A33%2C%2033000%20Akdeniz%2FMersin!3m2!1d36.770911!2d34.570308!4m5!1s0x15278b39edaa851f%3A0x38dc3bf7495371b5!2sMersin%20Sahili%2C%20E%C4%9Fri%C3%A7am%2C%20Adnan%20Menderes%20Blv.%20No%3A33%2C%2033000%20Akdeniz%2FMersin!3m2!1d36.770911!2d34.570308!5e0!3m2!1str!2str!4v1794777835556!5m2!1str!2str"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Limon Kafe konumu"
+          ></iframe>
+          <table class="hours">
+            <tr>
+              <td>Pazartesi-Cuma</td>
+              <td>08:00-22:00</td>
+            </tr>
+            <tr>
+              <td>Cumartesi-Pazar</td>
+              <td>09:00-23:00</td>
+            </tr>
+          </table>
+          <address>
+            <p>Limon Kafe Sahil Yolu, Limon Sokak No: 12 Mezitli / Mersin</p>
+            <p>Telefon: <a href="tel:+903241234567">0 (324) 123 45 67 </a></p>
+          </address>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">© 2026 Limon Kafe</div>
+    </footer>
+  </body>
+</html>
