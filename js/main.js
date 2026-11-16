@@ -67,3 +67,27 @@ document.addEventListener("keydown", (event) => {
     closeLightbox();
   }
 });
+
+// ===== Rezervasyon formu =====
+const form = document.querySelector(".reservation-form");
+const formMessage = document.querySelector(".form-message");
+
+const dateInput = document.getElementById("date");
+const now = new Date();
+
+const year = now.getFullYear();
+const month = String(now.getMonth() + 1).padStart(2, "0");
+const day = String(now.getDate()).padStart(2, "0");
+
+dateInput.min = `${year}-${month}-${day}`;
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = document.getElementById("nameSurname").value;
+  const people = document.getElementById("numberOfPeople").value;
+
+  formMessage.textContent = `Teşekkürler ${name}! ${people} kişilik rezervasyon talebiniz alındı. Onaylamak için sizi arayacağız.`;
+
+  form.reset();
+});
