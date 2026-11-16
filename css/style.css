@@ -419,15 +419,6 @@ footer {
   .hero-slogan {
     font-size: 1.5rem;
   }
-  .about-content {
-    flex-direction: row;
-    align-items: center;
-    gap: 2.5rem;
-  }
-  #hakkimizda img,
-  .about-text {
-    flex: 1;
-  }
   .menu-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -455,5 +446,20 @@ footer {
   .contact-content iframe {
     height: 100%;
     min-height: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-content {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2.5rem;
+  }
+  #hakkimizda img,
+  .about-text {
+    flex: 1;
+    min-width: 0;
+  }
+  #hakkimizda img {
+    object-fit: cover;
   }
 }
