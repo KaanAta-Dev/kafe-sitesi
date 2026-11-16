@@ -35,3 +35,35 @@ tabButtons.forEach((button) => {
     document.getElementById(category).classList.add("active");
   });
 });
+
+// ===== Lightbox =====
+const galleryImages = document.querySelectorAll(".gallery img");
+const lightbox = document.querySelector(".lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const lightboxClose = document.querySelector(".lightbox-close");
+
+galleryImages.forEach((img) => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add("open");
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+});
