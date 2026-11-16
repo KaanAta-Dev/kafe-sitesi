@@ -411,6 +411,7 @@ footer {
     padding: 0;
   }
   .site-header .btn-small {
+    display: none;
     margin-left: 0;
   }
   h1 {
@@ -449,6 +450,9 @@ footer {
   }
 }
 @media (min-width: 1024px) {
+  .site-header .btn-small {
+    display: inline-block;
+  }
   .about-content {
     flex-direction: row;
     align-items: stretch;
