@@ -1,0 +1,37 @@
+// ===== Mobil menü =====
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".site-header nav");
+
+menuButton.addEventListener("click", () => {
+  nav.classList.toggle("open");
+
+  if (nav.classList.contains("open")) {
+    menuButton.textContent = "✕";
+  } else {
+    menuButton.textContent = "☰";
+  }
+});
+
+const navLinks = document.querySelectorAll(".nav-links a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuButton.textContent = "☰";
+  });
+});
+
+// ===== Menü sekmeleri =====
+const tabButtons = document.querySelectorAll(".tab-btn");
+const menuPanels = document.querySelectorAll(".menu-panel");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    tabButtons.forEach((btn) => btn.classList.remove("active"));
+    menuPanels.forEach((panel) => panel.classList.remove("active"));
+
+    button.classList.add("active");
+    const category = button.dataset.category;
+    document.getElementById(category).classList.add("active");
+  });
+});
